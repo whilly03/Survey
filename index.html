@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simba Planet-Survey</title>
+  </head>
+
+  <style>
+    /* General/reset styles */
+
+    @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800;900&display=swap");
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      overflow-x: hidden;
+      color: #333;
+    }
+
+    header {
+      margin-top: 3rem;
+    }
+
+    .head {
+      background-image: url(img/background.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      max-width: 50rem;
+      margin: 0 auto;
+    }
+
+    .logo {
+      width: 10rem;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .logo1 {
+      width: 15%;
+      height: 15%;
+    }
+
+    .background {
+      margin-top: 6rem;
+      padding-bottom: 6rem;
+      position: relative;
+    }
+
+    .header-test {
+      text-align: center;
+      color: #7c0018;
+      font-size: 4rem;
+      font-weight: 1000;
+      line-height: 1;
+    }
+
+    .header-test span {
+      color: #001c89;
+      display: block;
+    }
+
+    .stripe {
+      position: absolute;
+      left: 40%;
+    }
+
+    /* product section */
+
+    .product {
+      padding: 4rem 4rem;
+    }
+
+    .product {
+      background-color: #001c89;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      align-items: start;
+    }
+
+    .product-text {
+      color: white;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .product-img img {
+      width: 100%;
+    }
+
+    .nike-listing {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin-top: 1rem;
+    }
+
+    .listing-img {
+      width: 12%;
+      height: 12%;
+    }
+
+    .btn {
+      border: none;
+      margin-top: 2rem;
+      border-radius: 9px;
+      padding: 1rem 3rem;
+      background-color: #dce4ff;
+      transition: all 0.5s ease-in;
+    }
+
+    .btn a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #333;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    .btn:hover {
+      background-color: #07d6ff;
+    }
+
+    /* bicycle section */
+
+    .bike {
+      background-image: url(img/surveybackground.webp);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    .bike-list {
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* footer */
+
+    .footer-address {
+      background-color: #008a15;
+
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      /*  display: flex;
+    justify-content: space-around; */
+      padding: 1rem 2rem;
+    }
+
+    .footer-icon {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .icon {
+      width: 2rem;
+    }
+
+    .footer-text {
+      font-size: 1.3rem;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    @media (max-width: 700px) {
+      .product-list {
+        grid-template-columns: 1fr;
+      }
+
+      .product-img img {
+        width: 60%;
+        margin-top: 2rem;
+      }
+
+      .header-test {
+        font-size: 2.5rem;
+      }
+
+      .product {
+        padding: 1rem 2rem;
+      }
+
+      .product-text {
+        font-size: 1.2rem;
+      }
+
+      .footer-address {
+        grid-template-columns: 1fr 1fr;
+        padding: 5px 2rem;
+      }
+
+      .footer-icon {
+        gap: 1rem;
+      }
+
+      .icon {
+        width: 1rem;
+      }
+
+      .footer-text {
+        font-size: 1rem;
+        color: #fff;
+        font-weight: 500;
+      }
+
+      .sm {
+        margin: 0 auto;
+        grid-column: 1 / -1;
+      }
+    }
+  </style>
+  <body>
+    <!-- First section -->
+    <header>
+      <div class="container head">
+        <nav class="navbar">
+          <img class="logo1" src="img/nikeweb.webp" alt="Nike logo" />
+          <img class="logo" src="img/simbaweb.webp" alt="Nike logo" />
+        </nav>
+
+        <div class="background">
+          <!-- <img src="img/background.png" alt="background" width="100%" /> -->
+          <h1 class="header-test">WIN A N10,000 <span>GIFT VOUCHER</span></h1>
+          <img
+            class="stripe"
+            src="img/lineweb.png"
+            alt="line stripe"
+            width="40%"
+          />
+        </div>
+      </div>
+    </header>
+    <section class="product-section">
+      <div class="container product">
+        <div class="product-list">
+          <div class="listing">
+            <p class="product-text">
+              Take our survey and get a N10,000 voucher redeemable on bicycles
+              and Nike trainers sold at any of our Simba Planet showrooms
+            </p>
+            <button class="btn">
+              <a href="https://www.surveymonkey.com/r/ZN2RX96" target="_blank"
+                >begin Survey</a
+              >
+            </button>
+          </div>
+          <div class="product-img">
+            <img src="img/shoeweb.webp" alt="Nike sneakers" />
+          </div>
+        </div>
+        <div class="nike-listing">
+          <img class="listing-img" src="img/raleigh.png" alt="" />
+          <img class="listing-img" src="img/nikeair.png" alt="" />
+          <img class="listing-img" src="img/airmax.png" alt="" />
+          <img class="listing-img" src="img/jprdan.png" alt="" />
+          <img class="listing-img" src="img/dook.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="bike">
+          <img class="bike-list" src="img/bicycleweb.webp" alt="" width="90%" />
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="footer-address">
+          <div class="footer-icon">
+            <img class="icon" src="img/surveywhatsapp.png" alt="" />
+            <p class="footer-text">905 629 4256</p>
+          </div>
+          <div class="footer-icon">
+            <img class="icon" src="img/surveycall.png" alt="" />
+            <p class="footer-text">0700 111 2233</p>
+          </div>
+          <div class="footer-icon sm">
+            <img class="icon" src="img/surveyweb.png" alt="" />
+            <p class="footer-text">www.simbaplanet.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
